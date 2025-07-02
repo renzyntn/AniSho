@@ -1,2 +1,2 @@
 # AniSho
-Landing Page of a streaming website
+Anime Website Landing Page
