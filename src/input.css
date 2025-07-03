@@ -1,1 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    --font-inter: "Inter", "Arial";
+
+    --color-dark: #2F3136;
+    --color-dark-font: #DCDDDE;
+    --color-dark-red: #BE1931;
+
+    --color-light: #F3F3F3;
+    --color-light-font: #2F3136;
+    --color-light-red: #BE1931;
+}
