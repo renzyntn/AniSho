@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -11,8 +12,19 @@
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-inter: "Inter", "Arial";
+    --color-dark: #2F3136;
+    --color-dark-font: #DCDDDE;
+    --color-light-font: #2F3136;
   }
 }
 @layer base {
@@ -161,14 +173,26 @@
   }
 }
 @layer utilities {
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .h-screen {
+    height: 100vh;
   }
   .border-collapse {
     border-collapse: collapse;
   }
   .resize {
     resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -177,14 +201,56 @@
   .bg-amber-200 {
     background-color: var(--color-amber-200);
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
+  .bg-dark {
+    background-color: var(--color-dark);
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
+  .bg-dark-font {
+    background-color: var(--color-dark-font);
   }
-  .text-amber-50 {
-    color: var(--color-amber-50);
+  .align-middle {
+    vertical-align: middle;
+  }
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .text-dark-font {
+    color: var(--color-dark-font);
+  }
+  .text-light-font {
+    color: var(--color-light-font);
   }
   .underline {
     text-decoration-line: underline;
@@ -199,6 +265,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -208,6 +278,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
