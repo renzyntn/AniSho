@@ -7,9 +7,9 @@
     <title>AniSho</title>
 </head>
 <body class="bg-dark">
-    <header class="w-auto h-[80px] flex flex-row items-start p-[20px] border-dark-font/[.60] border-b-1">
+    <header class="w-auto h-[80px] flex flex-row justify-center items-center p-[20px] border-dark-font/[.60] border-b-1">
         <div class="flex justify-center items-center w-[100px] h-[40px]">
-            <a href="#"><img src="/assets/logo/logo2-anisho.svg" alt="AniSho"></a>
+            <a href="#"><img src="/assets/logo/logo2-anisho.svg" alt="AniSho Logo"></a>
         </div>
         <nav>
             <ul class="w-[520px] h-[40px] flex justify-center items-center gap-[30px] py-[10px] px-[5px] font-inter font-medium text-dark-font text-[15px] ml-[200px]">
@@ -28,17 +28,37 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="/assets/icons/icon-light.svg" class="w-[28px] h-[28px]">
+                        <img src="/assets/icons/icon-light.svg" alt="Light Mode Icon" class="w-[28px] h-[28px]">
                     </a>
                 </li>
             </ul>
         </nav>
         <div class="w-[400px] h-[40px] flex items-center rounded-[10px] border-[1px] border-dark-font/[.60] p-[10px] gap-[10px] text-dark-font font-inter backdrop-opacity-60">
             <img src="/assets/icons/icon-search.svg" alt="Search Image" class="w-[24px] h-[24px]">
-            <input type="text" placeholder="Search" class="w-[344px] outline-0">
+            <input type="text" placeholder="Search" class="w-[344px] outline-0 text-[15px]">
         </div>
     </header>
 
+    <main class="w-auto flex flex-col p-[30px] gap-[30px]">
+        <section class="w-full h-[400px]">
+            <div class="relative w-full h-full">
+                <img src="/assets/images/poster.jpg" alt="Poster sliding" class="w-full h-full object-cover rounded-[10px]">
+
+                <div class="w-[380px] h-[240px] bg-black/40 flex flex-col items-start px-[40px] py-[25px] rounded-[10px] gap-[9px] font-inter text-dark-font absolute bottom-[15px] left-[15px]">
+                    <h1 class="text-[40px] font-extrabold">Chainsaw Man</h1>
+                    <p class="w-full text-[14px] font-semibold">Denji is robbed of a normal teenage life, left with nothing but his deadbeat father's overwhelming debt. His only companion...</p>
+                    <div class="w-full h-[50px] flex items-center gap-[15px] font-extrabold text-[16px]">
+                        <button class="w-[110px] h-[50px] bg-dark-red rounded-[10px]">Watch Now</button>
+                        <button class="w-[110px] h-[50px] bg-dark rounded-[10px]">Watch Later</button>
+                        <span class="flex items-center text-[14px] font-medium">
+                            <img src="/assets/icons/icon-star.svg" alt="Star rating" class="w-[14px] h-[14px]">
+                            8/10
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>
