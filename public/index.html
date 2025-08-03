@@ -8,7 +8,7 @@
     <title>AniSho</title>
 </head>
 <body class="bg-dark font-inter">
-    <header class="w-full h-[70px] sm:h-[80px] sm:flex justify-between items-center px-[8px] py-[20px] md:p-[20px] xl:px-[30px] 2xl:px-[60px] bg-dark/60 border-dark-font/40 border-b-1 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg">
+    <header class="w-full h-[70px] sm:h-[80px] sm:flex justify-between items-center px-[8px] py-[20px] sm:p-[20px] xl:px-[30px] 2xl:px-[60px] bg-dark/60 border-dark-font/40 border-b-1 fixed top-0 left-0 right-0 z-50 backdrop-blur-lg">
         <div class="hidden sm:block justify-center items-center w-[100px] h-[40px]">
             <a href="#"><img src="/assets/logo/logo2-anisho.svg" alt="AniSho Logo"></a>
         </div>
@@ -95,20 +95,76 @@
         <section class="w-full h-auto flex flex-col lg:flex-row justify-center items-center lg:gap-[32px] text-dark-font">
             <div class="w-[170px] h-[90px] sm:w-[200px] sm:h-[90px] md:w-[260px] md:h-[100px]">
                 <h1 class="font-extrabold text-[22px] md:text-[28px] xl:text-[40px] text-center whitespace-nowrap">
-                    <span class="text-dark-red">Spring</span>
+                    <span class="text-dark-red">Summer</span>
                     <span>2025</span>
                 </h1>
                 <p class="font-semibold text-center text-[12px] sm:text-[14px] md:text-[16px]">
-                    Check out these new animes of the Spring 2025 season.
+                    Check out these new animes of the Summer 2025 season.
                 </p>
             </div>
 
             <div class="sm:w-fit sm:h-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 justify-items-center p-[24px] gap-[18px] sm:gap-[30px]">
-                <img src="/assets/images/fireforce.jpg" alt="Fire fireforce" class="rounded-[10px]">
-                <img src="/assets/images/lazarus.jpg" alt="Fire fireforce" class="rounded-[10px]">
-                <img src="/assets/images/windbreaker.jpg" alt="Fire fireforce" class="rounded-[10px]">
-                <img src="/assets/images/witchwatch.jpg" alt="Fire fireforce" class="rounded-[10px]">
-                <img src="/assets/images/loveiswar.jpg" alt="Fire fireforce" class="rounded-[10px] hidden xl:block">
+                <div class="w-full h-full lg:overflow-hidden relative group">
+                    <img src="/assets/images/fireforce.jpg" alt="Fire fireforce" class="rounded-[10px]">
+                    <div class="w-full h-[30%] flex flex-col justify-center items-center text-center p-[10px] font-bold bg-black/70 rounded-[10px] absolute bottom-0 left-0 right-0 lg:transform lg:translate-y-full lg:group-hover:translate-y-0 lg:transition-transform lg:duration-300 lg:ease-out">
+                        <span class="text-[16px] md:text-[18px] lg:text-[20px]">
+                            Fire Force
+                            <span class="flex justify-center items-center gap-[1px] text-[12px]">
+                                <img src="assets/icons/icon-star.svg" class="w-[10px] h-[10px]">
+                                8/10
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full h-full lg:overflow-hidden relative group">
+                    <img src="/assets/images/lazarus.jpg" alt="Fire fireforce" class="rounded-[10px]">
+                    <div class="w-full h-[30%] flex flex-col justify-center items-center text-center p-[10px] font-bold bg-black/70 rounded-[10px] absolute bottom-0 left-0 right-0 lg:transform lg:translate-y-full lg:group-hover:translate-y-0 lg:transition-transform lg:duration-300 lg:ease-out">
+                        <span class="text-[16px] md:text-[18px] lg:text-[20px]">
+                            Lazarus
+                            <span class="flex justify-center items-center gap-[1px] text-[12px]">
+                                <img src="assets/icons/icon-star.svg" class="w-[10px] h-[10px]">
+                                8/10
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full h-full lg:overflow-hidden relative group">
+                    <img src="/assets/images/windbreaker.jpg" alt="Fire fireforce" class="rounded-[10px]">
+                    <div class="w-full h-[30%] flex flex-col justify-center items-center text-center p-[10px] font-bold bg-black/70 rounded-[10px] absolute bottom-0 left-0 right-0 lg:transform lg:translate-y-full lg:group-hover:translate-y-0 lg:transition-transform lg:duration-300 lg:ease-out">
+                        <span class="text-[16px] md:text-[18px] lg:text-[20px]">
+                            Windbreaker
+                            <span class="flex justify-center items-center gap-[1px] text-[12px]">
+                                <img src="assets/icons/icon-star.svg" class="w-[10px] h-[10px]">
+                                8/10
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full h-full lg:overflow-hidden relative group">
+                    <img src="/assets/images/witchwatch.jpg" alt="Fire fireforce" class="rounded-[10px]">
+                    <div class="w-full h-[30%] flex flex-col justify-center items-center text-center p-[10px] font-bold bg-black/70 rounded-[10px] absolute bottom-0 left-0 right-0 lg:transform lg:translate-y-full lg:group-hover:translate-y-0 lg:transition-transform lg:duration-300 lg:ease-out">
+                        <span class="text-[16px] md:text-[18px] lg:text-[20px]">
+                            Witch Watch
+                            <span class="flex justify-center items-center gap-[1px] text-[12px]">
+                                <img src="assets/icons/icon-star.svg" class="w-[10px] h-[10px]">
+                                8/10
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full h-full lg:overflow-hidden relative hidden xl:block group">
+                    <img src="/assets/images/kowloon.jpg" alt="Fire fireforce" class="rounded-[10px]">
+                    <div class="w-full h-[30%] flex flex-col justify-center items-center text-center p-[10px] font-bold bg-black/70 rounded-[10px] absolute bottom-0 left-0 right-0 lg:transform lg:translate-y-full lg:group-hover:translate-y-0 lg:transition-transform lg:duration-300 lg:ease-out">
+                        <span class="text-[16px] md:text-[18px] lg:text-[20px]">
+                            Kowloon Generic Romance
+                            <span class="flex justify-center items-center gap-[1px] text-[12px]">
+                                <img src="assets/icons/icon-star.svg" class="w-[10px] h-[10px]">
+                                8/10
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                
             </div>
 
         </section>
